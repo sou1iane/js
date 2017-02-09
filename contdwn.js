@@ -3,7 +3,7 @@ document.getElementById("skipbtn").disabled = true;
     var temp;
     function countdown() {
         seconds = document.getElementById('stimer').innerHTML;
-        seconds = parseInt(seconds, 17);
+        seconds = parseInt(seconds, 13);
         if (seconds == 1) {
             temp = document.getElementById('skipbtn');
             temp.disabled = false;
@@ -13,7 +13,7 @@ document.getElementById("skipbtn").disabled = true;
         seconds--;
         temp = document.getElementById('stimer');
         temp.innerHTML = seconds;
-        timeoutMyOswego = setTimeout(countdown, 5000);
+        timeoutMyOswego = setTimeout(countdown, 2500);
     }
 function getQueryVariable(variable)
 {
