@@ -3,7 +3,7 @@ document.getElementById("skipbtn").disabled = true;
     var temp;
     function countdown() {
         seconds = document.getElementById('stimer').innerHTML;
-        seconds = parseInt(seconds, 13);
+        seconds = parseInt(seconds, 17);
         if (seconds == 1) {
             temp = document.getElementById('skipbtn');
             temp.disabled = false;
@@ -13,7 +13,7 @@ document.getElementById("skipbtn").disabled = true;
         seconds--;
         temp = document.getElementById('stimer');
         temp.innerHTML = seconds;
-        timeoutMyOswego = setTimeout(countdown, 1500);
+        timeoutMyOswego = setTimeout(countdown, 10000);
     }
 function getQueryVariable(variable)
 {
@@ -29,4 +29,4 @@ function getQueryVariable(variable)
 function geturl() {
 window.open (atob(getQueryVariable("s")),"_blank")
 }
-setTimeout(function(){ countdown(); }, 2000);
+setTimeout(function(){ countdown(); }, 4000);
